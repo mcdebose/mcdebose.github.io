@@ -1,0 +1,90 @@
+/*
+Author: Marcus Debose-Hubbard
+Date Created: 02/24/2026
+Date last edited: 02/27/2026
+Version: 1.1
+Description: MIS 3371 Assignment 1, create a patient registration form using HTML, Javacript, and CSS. This CSS form is used to style the HTML form.   
+*/
+
+/* Style elements like font and color for body */
+body {
+
+    color: #242e35;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3e8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style elements like font and color for Header 1 (h1) */
+
+h1 {
+    color: #ddd;
+    text-align: left;
+    font-family: Haettenschweiler sans-serif;
+
+}
+
+/* Style elements like font and color for Header 2 (h2) */
+
+h2 {
+    color: #070101;
+   
+}
+
+/* Style elements for breaks in the page (hr)*/
+
+hr {
+    border: 1px solid #242e35;
+}
+
+/* Style Elements for page layout, allows for section stying */
+
+
+html, body {    /*Ensures the page takes up the screen fully*/
+    height:100%; 
+} 
+
+.container {    /*Container that centers page and has padding*/
+    max-width:1000px; 
+    margin:0 auto; 
+    padding:10px;
+} 
+
+
+header { 
+    background: #070101; 
+    color:#fff; 
+    padding:10px 0;
+}
+
+.header { 
+    display: flex;  
+    justify-content: space-between ; 
+}
+
+
+
+footer { 
+    
+    background:#070101; 
+    color:#ddd; padding:10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer { 
+    display:flex; 
+    align-items:center; 
+    gap:10px; 
+}
+
+/*Styling for the contact us button*/
+
+#contactbtn {           
+    background:#444; 
+    color:#fff; 
+    padding:8px 12px; 
+    border-radius:4px; 
+    cursor:pointer; 
+} 
+
