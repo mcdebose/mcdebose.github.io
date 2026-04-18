@@ -1,0 +1,54 @@
+<!--
+Author: Marcus Debose-Hubbard
+Date Created: 02/27/2026
+Date last edited: 04/17/2026
+Version: 1.1
+Description: MIS 3371 Assignment 1, create a patient registration form. This is the thank you page that the user will be directed to after submitting the form.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="patient-form-style2.css">
+</head>
+
+ <header>
+            <div class="container header">
+                <h1>Asclepius Health</h1>
+                <img src="aesculapian-staff-305434_1280.png" alt="Rod of Asclepius" width="100" height="100">
+            </div>
+                <p id="datetime" align="center"></p>
+        </header>
+
+<body>
+    <h2>Thank You for Registering!</h2>
+    <p>Your registration has been successfully submitted. 
+        We will contact you within 1-2 buisness days to confirm your appointment.</p>
+
+<footer>
+            <div class="container footer">
+                <button id="contactbtn">Contact Us</button>
+                <div>
+                    <span>Asclecpius Health</span><br>
+                    <small>2500 West End Ave, Nashville, TN 37203</small>
+                </div>
+            </div>
+        </footer>
+
+<script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt;
+    </script>
+
+
+
+       </body>
+
+
+
+
+
+</html>
