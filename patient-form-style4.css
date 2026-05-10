@@ -1,0 +1,170 @@
+/*
+Author: Marcus Debose-Hubbard
+Date Created: 02/24/2026
+Date last edited: 05/09/2026
+Version: 1.5
+Description: This CSS form is used to style the HTML form and javascript elements.
+*/
+
+/* Style elements like font and color for body */
+
+body {
+
+    color: #242e35;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3e8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Style elements like font and color for Header 1 (h1) */
+
+h1 {
+    color: #ddd;
+    text-align: left;
+    font-family: Haettenschweiler sans-serif;
+
+}
+
+/* Style elements like font and color for Header 2 (h2) */
+
+h2 {
+    color: #070101;
+   
+}
+
+/* Style elements for breaks in the page (hr)*/
+
+hr {
+    border: 1px solid #242e35;
+}
+
+/* Style Elements for page layout, allows for section stying */
+
+/*Ensures the page takes up the screen fully*/
+
+html, body {    
+    height:100%; 
+} 
+
+/*Container that centers page and has padding*/
+
+.container {    
+    max-width:1000px; 
+    margin:0 auto; 
+    padding:10px;
+} 
+
+main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 20px 100px;
+}
+
+/* Styling for the header, fixed to the top of the page.*/
+header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #070101; 
+    color:#fff; 
+    padding:10px 0 8px;
+    flex-shrink: 0;
+    z-index: 999;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    transform: translateY(0);
+    will-change: transform, opacity;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header.hidden {
+    transform: translateY(-110%);
+    opacity: 0;
+}
+
+.header { 
+    display: flex;  
+    justify-content: space-between ; 
+}
+
+/*Styling for the welcome message outline. */
+
+.welcome-message {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    background: #e9f7ef;
+    border: 1px solid #ddd;
+    color: #000000;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    display: none;
+    text-align: center;
+}
+
+.welcome-message.visible {
+    display: block;
+}
+
+/* Style elements for the footer, which is fixed to the bottom of the page.*/
+
+footer { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#070101; 
+    color:#ddd; padding:10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    flex-shrink: 0;
+}
+
+.footer { 
+    display:flex; 
+    align-items:center; 
+    gap:10px; 
+}
+
+/*Styling for the contact us button*/
+
+#contactbtn {           
+    background:#444; 
+    color:#fff; 
+    padding:8px 12px; 
+    border-radius:4px; 
+    cursor:pointer; 
+} 
+
+/*Styling for form elements with bad inputs.*/
+
+input:user-invalid {
+  border: 3px solid red !important;
+}
+
+
+
+
+/* forces username to be lowercase */
+
+input#username {
+  text-transform: lowercase;
+}
+
+/*Styling for error messages.*/
+
+.error-message {
+  
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
